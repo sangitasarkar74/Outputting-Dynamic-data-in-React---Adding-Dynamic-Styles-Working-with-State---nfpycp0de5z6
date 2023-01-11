@@ -3,7 +3,7 @@ import '../styles/App.css';
 const App = () => {
   //code here
   const [name, setName] = useState("");
-  const [data, setData] = useState([]);
+  const [data, setData] = useState(' ___ ');
 
   const handleChange = (event) => {
     // return `Hello my name is ${prop}____ and I study at Newton School`
@@ -20,7 +20,7 @@ const App = () => {
     <div id="main">
       <input id='input' type="text" name="firstName" onChange={handleChange} value={name}></input>
       <button id='button' onClick={handleClickBtn} value={name}>Click</button>
-      <p id='text'> Hello my name is {data}____ and I study at Newton School</p>
+      <p id='text'> Hello my name is {data} and I study at Newton School</p>
     </div >
   )
 }
