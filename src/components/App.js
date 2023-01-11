@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import '../styles/App.css';
-const App = (props) => {
+const App = () => {
   //code here
   const [name, setName] = useState("");
   const [data, setData] = useState([]);
@@ -12,7 +12,7 @@ const App = (props) => {
     console.log(event.target.value)
   }
 
-  const handleClickBtn = (e) => {
+  const handleClickBtn = () => {
     setData(name);
   }
 
